@@ -15,7 +15,7 @@ string itc_maxCharWord(string str){
                 len = itc_len(new_str);
             if (len > itc_len(max_len_str) && itc_isWord(new_str) == 1)
                 max_len_str = new_str;
-            start = i;
+            start = i + 1;
             len = 0;
             new_str = "";
             }
@@ -33,4 +33,3 @@ string itc_maxCharWord(string str){
     return max_len_str;
     return "error";
 }
-
